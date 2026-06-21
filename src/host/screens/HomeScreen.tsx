@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-  SafeAreaView,
-} from 'react-native';
+import {Text, TouchableOpacity, StyleSheet, SafeAreaView} from 'react-native';
 import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import type {RootStackParamList} from '../navigation/types';
 
@@ -56,17 +50,9 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     marginBottom: 12,
   },
-  buttonFinans: {
-    backgroundColor: '#E63946',
-  },
-  buttonMarket: {
-    backgroundColor: '#2563EB',
-  },
-  buttonText: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: '600',
-  },
+  buttonFinans: {backgroundColor: '#E63946'},
+  buttonMarket: {backgroundColor: '#2563EB'},
+  buttonText: {color: '#FFFFFF', fontSize: 16, fontWeight: '600'},
 });
 
 export default HomeScreen;

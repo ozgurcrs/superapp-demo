@@ -8,9 +8,9 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import type {RootStackParamList} from '../../navigation/types';
-import {fetchBitcoinPrice} from './api/coinGecko';
-import type {BitcoinPrice} from './api/coinGecko';
+import type {RootStackParamList} from '../../../host/navigation/types';
+import {fetchBitcoinPrice} from '../api/coinGecko';
+import type {BitcoinPrice} from '../api/coinGecko';
 
 type Props = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'Finans'>;
@@ -39,10 +39,7 @@ const FinansScreen = ({navigation}: Props) => {
       </View>
       <View style={styles.content}>
         <Text style={styles.title}>Finans Modülü</Text>
-        <Text style={styles.subtitle}>
-          Bu ekran ileride ayrı bir bundle olacak
-        </Text>
-
+        <Text style={styles.subtitle}>Remote Bundle (FAZ 4)</Text>
         <View style={styles.card}>
           <Text style={styles.cardLabel}>Bitcoin (BTC)</Text>
           {loading && (
@@ -60,10 +57,9 @@ const FinansScreen = ({navigation}: Props) => {
             </>
           )}
         </View>
-
         <View style={styles.infoCard}>
           <Text style={styles.infoLabel}>Modül Durumu</Text>
-          <Text style={styles.infoValue}>Yerel (FAZ 3)</Text>
+          <Text style={styles.infoValue}>Remote Bundle (FAZ 4)</Text>
         </View>
       </View>
     </SafeAreaView>

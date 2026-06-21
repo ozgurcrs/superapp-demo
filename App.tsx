@@ -1,5 +1,5 @@
 import React from 'react';
-import AppNavigator from './src/navigation/AppNavigator';
+import AppNavigator from './src/host/navigation/AppNavigator';
 
 function App(): React.JSX.Element {
   return <AppNavigator />;
